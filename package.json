@@ -2,5 +2,24 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.7",
     "tailwindcss": "^4.1.7"
-  }
+  },
+  "name": "foodpanda-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadbilalhaiderkhan/foodpanda-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammadbilalhaiderkhan/foodpanda-website/issues"
+  },
+  "homepage": "https://github.com/muhammadbilalhaiderkhan/foodpanda-website#readme",
+  "description": ""
 }
