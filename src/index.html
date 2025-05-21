@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="bg-[#093035] roboto h-[71px] text-white flex justify-center items-center gap-4 ">
+            <button class="text-[14px] uppercase border-1 rounded-lg p-3 cursor-pointer hover:bg-white hover:text-[#093035] transition delay-110 duration-300 ease-in-out hover:scale-95">
+                Sign Up for a Business Account
+            </button>
+
+            <button class="text-[14px] uppercase border-1 rounded-lg p-3 cursor-pointer hover:bg-white hover:text-[#093035] transition delay-110 duration-300 ease-in-out hover:scale-95">
+                Sign Up as a customer
+            </button>
+        </nav>
+
+        <nav class="bg-black h-[68px] flex justify-between items-center">
+            <div>
+                <button class="ml-10 roboto uppercase text-white border-1 rounded-md px-[20px] py-[7px] cursor-pointer hover:bg-white hover:text-[#093035] transition delay-110 duration-300 ease-in-out hover:scale-95">
+                    login
+                </button>
+            </div>
+            
+            <div>
+                <img src="images/Logo (3).png" alt="" class="w-55 "> 
+            </div>
+            
+            <div >
+                <img src="/images/account.png" alt="" class="w-10 mr-10">
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="">
+        <div class="bg-[url('./images/pexels-hasan-kurt-154798938-10749578.jpg')] bg-cover bg-top bg-no-repeat bg-full w-full h-[80vh]  ">
+            <div class="ml-16 pt-30 flex flex-col gap-6">
+                <h1 class="poppins-bold text-[50px] text-white">Enjoy discounts on your first
+                <br /> order.
+                </h1>
+
+                <div class="w-[58%] bg-white px-[14px] py-[16px] rounded-lg flex justify-evenly">
+                    <input type="search" class="roboto w-[85%] focus:outline-none border-1 border-[#093035] h-[48px] px-[16px] py-[12px] rounded-lg " placeholder="Enter your city name">
+                    <button class=" h-[48px] w-[99.5px] rounded-lg poppins-bold cursor-pointer bg-[#093035] text-white hover:bg-white hover:border-[#093035] border-1 hover:text-[#093035] transition delay-102 duration-300 ease-in-out hover:scale-100"> Find Food</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
