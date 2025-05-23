@@ -108,9 +108,10 @@ let products = [
 
 let prodDiv = document.querySelectorAll('#main')[0];
 let h1El = document.querySelectorAll('#menu-heading')[0];
-prodDiv.innerHTML = '';
 
 function allProds() {
+    
+    prodDiv.innerHTML = '';
     h1El.innerText = '';
 
     for (let i = 0; i < products.length; i++) {
