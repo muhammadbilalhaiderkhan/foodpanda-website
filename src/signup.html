@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-[url('./images/pexels-hasan-kurt-154798938-10749578.jpg')] bg-cover bg-top bg-no-repeat min-h-screen flex flex-col blur- bg-white-950">
+        <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+            <div class=" px-6 py-8 rounded-xl shadow-xl text-black w-full">
+                <!-- <img class="w-17  mb-3" src="./images/Logo Vector (2).png" alt="cyber"> -->
+                <img src="images/Logo (3).png" alt="" class="w-[320px] cursor-pointer" onclick="window.location.href='./home.html';">
+            <h1 class="text-[#D4AF37] poppins-bold mb-8 text-3xl text-center text-shadow-sm">Sign up</h1>
+             <p id="para" class="poppins-bold text-red-800 text-center text-md text-grey-dark mb-6" ></p>
+            <input 
+                id="name-field"
+                type="text"
+                class="active:bg-none text-[#ede1ce] roboto border-2 border-[#D3B486] focus:border-[#D3B486] focus:outline-none block   w-full p-3 rounded mb-4"
+                name="fullname"
+                placeholder="Full Name"
+                required />
+        
+            <input 
+                id="email-field"
+                type="text"
+                class=" text-[#ede1ce] roboto border-2 border-[#D3B486] focus:border-[#D3B486] focus:outline-none block   w-full p-3 rounded mb-4"
+                name="email"
+                placeholder="Email"
+                required />
+        
+            <input 
+                id="password-field"
+                type="password"
+                class=" text-[#ede1ce] roboto border-2 border-[#D3B486] focus:border-[#D3B486] focus:outline-none block   w-full p-3 rounded mb-4"
+                name="password"
+                placeholder="Password"
+                required />
+            <input 
+                id="con-pass-field"
+                type="password"
+                class=" text-[#ede1ce] roboto border-2 border-[#D3B486] focus:border-[#D3B486] focus:outline-none block   w-full p-3 rounded mb-4"
+                name="confirm_password"
+                placeholder="Confirm Password"
+                required />
+        
+            <button
+                onclick="signup()"
+                type="submit"
+                class="hover:text-gray-950 hover:shadow-xl hover:bg-[#D3B486] font-semibold px-8 transition-all duration-300 transform cursor-pointer poppins-bold w-full text-center py-3 rounded bg-[#D4AF37] text-white hover:bg-green-dark focus:outline-none my-1">
+                    Create an Account
+                </button>
+        
+            <div class="roboto text-center text-sm text-grey-dark mt-4 text-white">
+                By signing up, you agree to the 
+                <a class="no-underline border-b border-grey-dark text-[#D4AF37]" href="#">
+                    Terms of Service
+                </a> and 
+                <a class="no-underline border-b border-grey-dark text-[#D4AF37]" href="#">
+                    Privacy Policy
+                </a>
+            </div>
+        </div>
+        
+        <div class="roboto text-[#D3B486] mt-6">
+            Already have an account? 
+            <a class="poppins-bold no-underline border-b border-blue text-[#D4AF37] " href="./login.html">
+                Log in
+            </a>.
+        </div>
+        </div>
+    </div>
+</body>
+</html>

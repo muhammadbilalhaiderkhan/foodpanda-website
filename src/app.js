@@ -1,3 +1,91 @@
+
+// signup feature
+
+let pEl = document.querySelectorAll("#para")[0];
+let nameEl = document.querySelectorAll("#name-field")[0];
+let emailEl = document.querySelectorAll("#email-field")[0];
+let passwordEl = document.querySelectorAll("#password-field")[0];
+let conPasswordEl = document.querySelectorAll("#con-pass-field")[0];
+
+
+let usersArr = JSON.parse(localStorage.getItem("users")) || [];
+
+function signup (){
+
+    let user = {};
+    user.fullName = nameEl.value;
+    user.email = emailEl.value;
+    user.password = passwordEl.value;
+    user.confirmPassword = conPasswordEl.value;
+
+    if(nameEl.value == "" || emailEl.value == "" || passwordEl.value == "" || conPasswordEl.value == ""){
+        pEl.innerHTML = "fill all the given fields";
+        setTimeout(function(){
+            pEl.innerHTML = "";
+        }, 3000);
+        return;
+    }
+
+    let isExist = usersArr.some(u => u.email.toLowerCase() === user.email.toLowerCase());
+
+    if(isExist){
+        pEl.innerHTML = "this email is already exist try another email !";
+        setTimeout(function(){
+            pEl.innerHTML = "";
+        }, 3000);
+        return;
+    }
+
+    if (user.password !== user.confirmPassword) {
+        pEl.innerHTML = "Passwords do not match. Check again!";
+        setTimeout(function() {
+            pEl.innerHTML = "";
+        }, 3000);
+        return;
+    }
+
+
+    location = "./login.html";
+
+    usersArr.push(user);
+    localStorage.setItem("users", JSON.stringify(usersArr));
+    nameEl.value = "";
+    emailEl.value = "";
+    passwordEl.value = "";
+    conPasswordEl.value = "";
+    // console.log(usersArr)
+}
+
+
+// login Feature
+
+let loginPel = document.querySelectorAll("#login-para")[0];
+let loginTrueEl = document.querySelectorAll("#login-para-2")[0];
+let loginInpEl = document.querySelectorAll("#login-email")[0];
+let loginPassEl = document.querySelectorAll('#login-password')[0];
+
+function logIn (){
+    let usersData = JSON.parse(localStorage.getItem("users"))
+    
+    let isExistData = usersData.some(userdetail => userdetail.email.toLowerCase() === loginInpEl.value.toLowerCase() && userdetail.password === loginPassEl.value)
+    if(isExistData) {
+        loginTrueEl.innerHTML = "Login Successfully!";
+        setTimeout(function(){
+            loginTrueEl.innerHTML = "";
+            location.href = "./home.html"
+        }, 1500);
+    }
+
+    else{
+        loginPel.innerHTML = "Invalid email or password"
+        setTimeout(function(){
+            loginPel.innerHTML = "";
+        }, 3000);
+    }
+}
+
+//    menu section products filterization functionality
+
 let products = [
 
     // Appetizers
@@ -179,4 +267,3 @@ function filterItems(el) {
         }
     }
 }
-
