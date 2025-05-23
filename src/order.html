@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodPanda | Orders</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <script src="src/app.js" defer></script>
+  </head>
+  <body>
+    
+    <!-- herder for phone  -->
+    <header class="bg-[#093035] flex justify-between items-center px-5 block md:hidden">
+      <button class="w-10 h-6 cursor-pointer">
+        <img src="/src/images/Vector (4).png" alt="" />
+      </button>
+
+      <div class="w-[40%]">
+        <img src="/src/images/Logo (3).png" alt="" />
+      </div>
+
+      <div class="flex gap-3">
+
+
+
+        
+         <!-- when user is Login -->
+        <a href="#">
+          <!-- <div class="w-5 h-5 bg-[#D3B486] rounded-full flex items-center justify-center absolute top-10 right-15">4</div> -->
+          <img src="images/Frame 9.png" alt="" class="w-[36px]" />
+        </a>
+
+        <a href="#">
+          <img src="images/account.png" alt="" class="w-[36px]" />
+        </a>
+      </div>
+    </header>
+
+
+    <!-- header for larger screen -->
+
+    <header class="bg-[#093035] md:block hidden">
+      <nav>
+        <ul class="capitalize flex gap-[18px] text-white items-center justify-center ">
+          <li class="cursor-pointer hover:underline">Menu</li>
+          <li class="cursor-pointer hover:underline">events</li>
+          <li class="cursor-pointer hover:underline">about us</li>
+          <li class="cursor-pointer hover:underline">
+            <img src="/src//images/Logo (3).png" alt="logo">
+          </li>
+          <li class="cursor-pointer hover:underline">Reservation</li>
+          <li class="cursor-pointer hover:underline">orders</li>
+          <li class="cursor-pointer hover:underline">contact us</li>
+        </ul>
+      </nav>
+    </header>
+
+
+    
+    <main
+      class="md:px-[100px] md:py-[150px] py-14 px-[20px] flex flex-col md:flex-row md:gap-[100px]"
+    >
+      <div class="md:w-[55%] w-full flex flex-col">
+        <section class="order-1">
+          <div
+            class="flex flex-col gap-[32px] border-b border-b-[#D0D0D0] pb-[45px] w-full"
+          >
+            <!-- cart 1 -->
+            <div
+              class="bg-[#F9EFE6] flex items-center gap-3 rounded-[8px] shadow-[0_2px_2px_0_rgba(0,0,0,0.25)] w-full"
+            >
+              <!-- cart image -->
+              <div
+                class="w-[210px] h-[137px] md:w-[172px] md:h-[172px] bg-no-repeat md:bg-contain bg-cover bg-center rounded-[100%]"
+                style="
+                  background-image: url('/src/images/buckwheat-porridge-with-mushrooms\ 1.png');
+                "
+              ></div>
+
+              <!-- cart detail -->
+              <div class="flex flex-col items-center gap-2.5 p-2">
+                <div class="flex justify-between">
+                  <div class="md:w-[67%] flex flex-col md:gap-[18px] gap-0">
+                    <h2 class="font-bold text-black text-[28px]">
+                      Lorem ipsum
+                    </h2>
+                    <p class="font-medium">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                  <p class="font-bold text-black text-[26px]">$14</p>
+                </div>
+
+                <div
+                  class="flex w-full md:gap-[33px] gap-3.5 md:justify-end justify-start"
+                >
+                  <div
+                    class="bg-[#EDDFD3] flex items-center md:gap-[24px] gap-4 w-fit md:rounded-[40px] rounded-[30px] font-bold h-fit"
+                  >
+                    <p
+                      class="bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center"
+                    >
+                      -
+                    </p>
+                    <p>2</p>
+                    <p
+                      class="bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center"
+                    >
+                      +
+                    </p>
+                  </div>
+                  <div>
+                    <span
+                      class="iconify text-black md:text-4xl text-2xl h-fit"
+                      data-icon="ant-design:delete-outlined"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- cart 2 -->
+            <div
+              class="bg-[#F9EFE6] flex items-center gap-3 rounded-[8px] shadow-[0_2px_2px_0_rgba(0,0,0,0.25)] w-full"
+            >
+              <!-- cart image -->
+              <div
+                class="w-[210px] h-[137px] md:w-[172px] md:h-[172px] bg-no-repeat md:bg-contain bg-cover bg-center rounded-[100%]"
+                style="
+                  background-image: url('/src/images/buckwheat-porridge-with-mushrooms\ 1.png');
+                "
+              ></div>
+
+              <!-- cart detail -->
+              <div class="flex flex-col items-center gap-2.5 p-2">
+                <div class="flex justify-between">
+                  <div class="md:w-[67%] flex flex-col md:gap-[18px] gap-0">
+                    <h2 class="font-bold text-black text-[28px]">
+                      Lorem ipsum
+                    </h2>
+                    <p class="font-medium">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                  <p class="font-bold text-black text-[26px]">$14</p>
+                </div>
+
+                <div
+                  class="flex w-full md:gap-[33px] gap-3.5 md:justify-end justify-start"
+                >
+                  <div
+                    class="bg-[#EDDFD3] flex items-center md:gap-[24px] gap-4 w-fit md:rounded-[40px] rounded-[30px] font-bold h-fit"
+                  >
+                    <p
+                      class="bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center"
+                    >
+                      -
+                    </p>
+                    <p>2</p>
+                    <p
+                      class="bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center"
+                    >
+                      +
+                    </p>
+                  </div>
+                  <div>
+                    <span
+                      class="iconify text-black md:text-4xl text-2xl h-fit"
+                      data-icon="ant-design:delete-outlined"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Delivery & Payment mobile only -->
+        <section class="flex flex-col gap-10 order-2 md:hidden">
+          <!-- delivery type -->
+          <div class="flex flex-col gap-[34px]">
+            <h3 class="text-[20px] font-bold">Delivery Type</h3>
+            <ul class="text-[#D3B486] font-bold flex flex-col gap-[20px]">
+              <li>
+                <label
+                  class="flex gap-[13px] items-center text-[18px] capitalize"
+                >
+                  <input
+                    type="radio"
+                    name="delivery"
+                    class="appearance-none w-7 h-7 rounded-full border-2 border-gray-400 checked:border-4 checked:border-[#D3B486] checked:bg-white transition duration-200"
+                  />
+                  <p>Delivery</p>
+                </label>
+              </li>
+              <li>
+                <label
+                  class="flex gap-[13px] items-center text-[18px] capitalize"
+                >
+                  <input
+                    type="radio"
+                    name="delivery"
+                    class="appearance-none w-7 h-7 rounded-full border-2 border-gray-400 checked:border-4 checked:border-[#D3B486] checked:bg-white transition duration-200"
+                  />
+                  <p>Pick up</p>
+                </label>
+              </li>
+              <li>
+                <label
+                  class="flex gap-[13px] items-center text-[18px] capitalize"
+                >
+                  <input
+                    type="radio"
+                    name="delivery"
+                    class="appearance-none w-7 h-7 rounded-full border-2 border-gray-400 checked:border-4 checked:border-[#D3B486] checked:bg-white transition duration-200"
+                  />
+                  <p>eat in</p>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- payment type -->
+          <div class="flex flex-col gap-[34px]">
+            <h3 class="text-[20px] font-bold capitalize">payment</h3>
+            <ul class="text-[#D3B486] font-bold flex flex-col gap-[20px]">
+              <li>
+                <label
+                  class="flex gap-[13px] items-center text-[18px] capitalize"
+                >
+                  <input
+                    type="radio"
+                    name="payment"
+                    class="appearance-none w-7 h-7 rounded-full border-2 border-gray-400 checked:border-4 checked:border-[#D3B486] checked:bg-white transition duration-200"
+                  />
+                  <p>cash</p>
+                </label>
+              </li>
+              <li>
+                <label
+                  class="flex gap-[13px] items-center text-[18px] capitalize"
+                >
+                  <input
+                    type="radio"
+                    name="payment"
+                    class="appearance-none w-7 h-7 rounded-full border-2 border-gray-400 checked:border-4 checked:border-[#D3B486] checked:bg-white transition duration-200"
+                  />
+                  <p>card</p>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="pt-[50px] flex flex-col gap-[70px] order-3">
+          <div class="flex flex-col gap-[20px]">
+            <div class="flex justify-between">
+              <p class="font-bold text-[20px]">Sub Total</p>
+              <p class="font-bold text-[20px]">$14</p>
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="font-bold text-[20px]">Total</p>
+              <div class="w-fit bg-[#D3B486] px-[20px] py-[6px]">
+                <p class="font-bold text-[20px]">$14</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="bg-[#093035] rounded-[44px] py-[18px] px-[130px] text-[#D4AF37] text-[23px] font-medium uppercase w-fit mx-auto md:mx-0 cursor-pointer"
+          >
+            Check Out
+          </button>
+        </div>
+      </div>
+
+      <section class="hidden md:flex md:flex-col gap-10">
+        <!-- delivery type -->
+        <div class="flex flex-col gap-[34px]">
+          <h3 class="text-[20px] font-bold">Delivery Type</h3>
+          <ul class="text-[#D3B486] font-bold flex flex-col gap-[20px]">
+            <li>
+              <label
+                class="flex gap-[13px] items-center text-[18px] capitalize"
+              >
+                <input
+                  type="radio"
+                  name="delivery"
+                  class="appearance-none w-7 h-7 rounded-full border-2 border-gray-400 checked:border-4 checked:border-[#D3B486] checked:bg-white transition duration-200"
+                />
+                <p>Delivery</p>
+              </label>
+            </li>
+            <li>
+              <label
+                class="flex gap-[13px] items-center text-[18px] capitalize"
+              >
+                <input
+                  type="radio"
+                  name="delivery"
+                  class="appearance-none w-7 h-7 rounded-full border-2 border-gray-400 checked:border-4 checked:border-[#D3B486] checked:bg-white transition duration-200"
+                />
+                <p>Pick up</p>
+              </label>
+            </li>
+            <li>
+              <label
+                class="flex gap-[13px] items-center text-[18px] capitalize"
+              >
+                <input
+                  type="radio"
+                  name="delivery"
+                  class="appearance-none w-7 h-7 rounded-full border-2 border-gray-400 checked:border-4 checked:border-[#D3B486] checked:bg-white transition duration-200"
+                />
+                <p>eat in</p>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <!-- payment type -->
+        <div class="flex flex-col gap-[34px]">
+          <h3 class="text-[20px] font-bold capitalize">payment</h3>
+          <ul class="text-[#D3B486] font-bold flex flex-col gap-[20px]">
+            <li>
+              <label
+                class="flex gap-[13px] items-center text-[18px] capitalize"
+              >
+                <input
+                  type="radio"
+                  name="payment"
+                  class="appearance-none w-7 h-7 rounded-full border-2 border-gray-400 checked:border-4 checked:border-[#D3B486] checked:bg-white transition duration-200"
+                />
+                <p>cash</p>
+              </label>
+            </li>
+            <li>
+              <label
+                class="flex gap-[13px] items-center text-[18px] capitalize"
+              >
+                <input
+                  type="radio"
+                  name="payment"
+                  class="appearance-none w-7 h-7 rounded-full border-2 border-gray-400 checked:border-4 checked:border-[#D3B486] checked:bg-white transition duration-200"
+                />
+                <p>card</p>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#093035] flex flex-col items-center p-[16px] gap-4">
+      <img src="images/Logo (3).png" alt="" class="w-[300px] cursor-pointer" />
+
+      <nav class="flex justify-center md:gap-[20px] gap-[10px] text-[15px] items-center">
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            Menu
+          </p>
+        </a>
+
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            Event
+          </p>
+        </a>
+
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            About Us
+          </p>
+        </a>
+
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            Reservation
+          </p>
+        </a>
+
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            Orders
+          </p>
+        </a>
+
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            Contact Us
+          </p>
+        </a>
+      </nav>
+
+      <p class="poppins-regular text-white md:text-[16px] text-[11px] text-center">
+        Lorem ipsum dolor sit amet consectetur. Sagittis mattis mauris at
+        condimentum arcu eget. Sed posuere cursus pharetra tortor eu purus
+        rhoncus lectus. Enim ut ligula sit nec donec. Hendrerit in.
+      </p>
+
+      <p class="poppins-regular text-white text-[16px]  text-center">
+        SUNDAY - THURSDAY: 11:30AM - 11PM | FRIDAY & SATURDAY: 11:30AM - 12AM
+      </p>
+
+      <div class="w-[586px] flex gap-[20px] justify-center mt-4">
+        <button
+          class="uppercase poppins-medium flex justify-center items-center gap-[10px] text-[#093035] bg-[#D3B486]  rounded-full md:text-[18px] text-[14px] cursor-pointer hover:bg-white hover:text-[#093035] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl md:px-[70px] px-[50px] py-[10px]"
+        >
+          Reserve Now
+        </button>
+        <button
+          class="uppercase poppins-medium flex justify-center items-center gap-[10px] text-[#093035] bg-[#D3B486]  rounded-full md:text-[18px] text-[14px] cursor-pointer hover:bg-white hover:text-[#093035] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl md:px-[70px] px-[50px] py-[10px]"
+        >
+          Reserve Now
+        </button>
+      </div>
+
+      <div class="flex gap-4 justify-center mt-5">
+        <a href="#">
+          <img src="images/Vector.png" alt="" class="w-[30px]" />
+        </a>
+
+        <a href="#">
+          <img src="images/Vector (1).png" alt="" class="w-[30px]" />
+        </a>
+      </div>
+
+      <p class="poppins-regular text-white text-[14px] uppercase mt-10">
+        CopyRight 2025
+      </p>
+    </footer>
+
+    <!-- script for icons -->
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+  </body>
+</html>

@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="./output.css" rel="stylesheet">
-</head>
-<body>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
     <header>
-        <nav class=" h-[72px] bg-[#093035] flex justify-around items-center">
-            <div>
-                <p class="poppins-regular text-[#F9ECC2] font-[14px]">SUNDAY - THURSDAY: 11:30AM - 11PM | FRIDAY & SATURDAY: 11:30AM - 12AM</p>
-            </div>
+      <nav class="h-[72px] bg-[#093035] flex justify-around items-center">
+        <div>
+          <p class="poppins-regular text-[#F9ECC2] font-[14px]">
+            SUNDAY - THURSDAY: 11:30AM - 11PM | FRIDAY & SATURDAY: 11:30AM -
+            12AM
+          </p>
+        </div>
 
-            <div class="flex gap-3">
-                <a href="#">
-                    <img src="images/Frame 7.png" alt="" class="w-[36px]">
-                </a>
+        <div class="flex gap-3">
+          <a href="#">
+            <img src="images/Frame 7.png" alt="" class="w-[36px]" />
+          </a>
 
-                <a href="#">
+          <button
+            class="poppins-medium flex justify-center items-center text-[#093035] bg-[#D3B486] rounded-full text-[15px] cursor-pointer hover:bg-[#093035] hover:text-[#D3B486] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl px-3"
+          >
+            SignUp
+          </button>
+          <button
+            class="poppins-medium flex justify-center items-center text-[#093035] bg-[#D3B486] rounded-full text-[15px] cursor-pointer hover:bg-[#093035] hover:text-[#D3B486] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl px-3"
+          >
+            LogIn
+          </button>
+          
+
+          <!-- when user is Login -->
+
+          <!-- <a href="#">
                     <img src="images/Frame 8.png" alt="" class="w-[36px]">
                 </a>
                 
@@ -31,144 +48,240 @@
                 
                 <a href="#">
                     <img src="images/account.png" alt="" class="w-[36px]">
-                </a>
-            </div>
-        </nav>
+                </a> -->
+        </div>
+      </nav>
     </header>
 
-    <main class="bg-[url('./images/snacks.png.png')] bg-cover bg-no-repeat w-full ">
-        <section>
+    <main
+      class="bg-[url('./images/snacks.png.png')] bg-cover bg-no-repeat w-full"
+    >
+      <section>
         <nav class="flex justify-center gap-[20px] items-center pt-[50px]">
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">Menu</p>
-            </a>
-              
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">Event</p>
-            </a>
-              
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">About Us</p>
-            </a>
-              
-            <img src="images/Logo (3).png" alt="" class="w-[420px] cursor-pointer">
+          <a href="#">
+            <p
+              class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+            >
+              Menu
+            </p>
+          </a>
 
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">Reservation</p>
-            </a>
-                
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">Orders</p>
-            </a>
-                
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">Contact Us</p>
-            </a>
+          <a href="#">
+            <p
+              class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+            >
+              Event
+            </p>
+          </a>
+
+          <a href="#">
+            <p
+              class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+            >
+              About Us
+            </p>
+          </a>
+
+          <img
+            src="images/Logo (3).png"
+            alt=""
+            class="w-[420px] cursor-pointer"
+          />
+
+          <a href="#">
+            <p
+              class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+            >
+              Reservation
+            </p>
+          </a>
+
+          <a href="#">
+            <p
+              class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+            >
+              Orders
+            </p>
+          </a>
+
+          <a href="#">
+            <p
+              class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+            >
+              Contact Us
+            </p>
+          </a>
         </nav>
-        </section>
+      </section>
 
-        <section class="flex flex-col items-center pt-[60px] text-center">
-            <h2 class="poppins-bold text-[24px] text-[#EDDFD3]">FRESH INGREDIENTS SOURCED GLOBALLY</h2>
-            <h1 class="poppins-bold text-[56px] text-[#D3B486] uppercase leading-[60px]">Italian Inspired Cuisine</h1>
-        </section>
+      <section class="flex flex-col items-center pt-[60px] text-center">
+        <h2 class="poppins-bold text-[24px] text-[#EDDFD3]">
+          FRESH INGREDIENTS SOURCED GLOBALLY
+        </h2>
+        <h1
+          class="poppins-bold text-[56px] text-[#D3B486] uppercase leading-[60px]"
+        >
+          Italian Inspired Cuisine
+        </h1>
+      </section>
 
-        <section class="flex justify-center pt-[400px]">
-            <div class="w-[586px] flex gap-[20px] justify-center">
-            <button class="uppercase poppins-medium flex justify-center items-center gap-[10px] text-[#093035] bg-[#D3B486] w-[281px] h-[50px] rounded-full text-[18px] cursor-pointer hover:bg-[#093035] hover:text-[#D3B486] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl">Reserve Now</button>
-            <button class="uppercase poppins-medium flex justify-center items-center gap-[10px] text-[#093035] bg-[#D3B486] w-[281px] h-[50px] rounded-full text-[18px] cursor-pointer hover:bg-[#093035] hover:text-[#D3B486] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl">Contact Us</button>
-            </div>
-        </section>
+      <section class="flex justify-center pt-[400px]">
+        <div class="w-[586px] flex gap-[20px] justify-center">
+          <button
+            class="uppercase poppins-medium flex justify-center items-center gap-[10px] text-[#093035] bg-[#D3B486] w-[281px] h-[50px] rounded-full text-[18px] cursor-pointer hover:bg-[#093035] hover:text-[#D3B486] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl"
+          >
+            Reserve Now
+          </button>
+          <button
+            class="uppercase poppins-medium flex justify-center items-center gap-[10px] text-[#093035] bg-[#D3B486] w-[281px] h-[50px] rounded-full text-[18px] cursor-pointer hover:bg-[#093035] hover:text-[#D3B486] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl"
+          >
+            Contact Us
+          </button>
+        </div>
+      </section>
 
-        <section>
-            <div class="flex flex-col gap-8 pt-[200px] pb-[100px]">
-                <h2 class="poppins-semibold text-[48px] text-[#D3B486] text-center">View Our Menu</h2>
+      <section>
+        <div class="flex flex-col gap-8 pt-[200px] pb-[100px]">
+          <h2 class="poppins-semibold text-[48px] text-[#D3B486] text-center">
+            View Restaurants
+          </h2>
 
-                <div class="flex gap-[20px] justify-center">
-                <a href="#">
-                    <div class="bg-[url('./images/appetizers.jpg')] w-[256px] h-[342px] bg-cover bg-no-repeat flex justify-center pt-[10px] rounded-lg transition delay-100 duration-300 ease-in-out hover:scale-105">
-                        <h2 class="poppins-bold text-[#093035] text-[24px]">Appetizers</h2>
-                    </div>
-                </a>
+          <div class="flex gap-[20px] justify-center">
+            <a href="#">
+              <div
+                class="bg-[url('./images/appetizers.jpg')] w-[256px] h-[342px] bg-cover bg-no-repeat flex justify-center pt-[10px] rounded-lg transition delay-100 duration-300 ease-in-out hover:scale-105"
+              >
+                <h2 class="poppins-bold text-[#093035] text-[24px]">
+                  Appetizers
+                </h2>
+              </div>
+            </a>
 
-                <a href="#">
-                    <div class="bg-[url('./images/maincourse.jpg')] w-[256px] h-[342px] bg-cover bg-no-repeat flex justify-center pt-[10px] rounded-lg transition delay-100 duration-300 ease-in-out hover:scale-105">
-                        <h2 class="poppins-bold text-[#093035] text-[24px]">Main Course</h2>
-                    </div>
-                </a>
-                
-                <a href="#">
-                    <div class="bg-[url('./images/drinks.jpg')] w-[256px] h-[342px] bg-cover bg-no-repeat flex justify-center pt-[10px] rounded-lg transition delay-100 duration-300 ease-in-out hover:scale-105">
-                        <h2 class="poppins-bold text-[#093035] text-[24px]">Drinks</h2>
-                    </div>
-                </a>
-                
-                <a href="#">
-                    <div class="bg-[url('./images/desserts.jpg')] w-[256px] h-[342px] bg-cover bg-no-repeat flex justify-center pt-[10px] rounded-lg transition delay-100 duration-300 ease-in-out hover:scale-105">
-                        <h2 class="poppins-bold text-[#093035] text-[24px]">Desserts</h2>
-                    </div>
-                </a>
-                </div>
-            </div>
-        </section>
+            <a href="#">
+              <div
+                class="bg-[url('./images/maincourse.jpg')] w-[256px] h-[342px] bg-cover bg-no-repeat flex justify-center pt-[10px] rounded-lg transition delay-100 duration-300 ease-in-out hover:scale-105"
+              >
+                <h2 class="poppins-bold text-[#093035] text-[24px]">
+                  Main Course
+                </h2>
+              </div>
+            </a>
+
+            <a href="#">
+              <div
+                class="bg-[url('./images/drinks.jpg')] w-[256px] h-[342px] bg-cover bg-no-repeat flex justify-center pt-[10px] rounded-lg transition delay-100 duration-300 ease-in-out hover:scale-105"
+              >
+                <h2 class="poppins-bold text-[#093035] text-[24px]">Drinks</h2>
+              </div>
+            </a>
+
+            <a href="#">
+              <div
+                class="bg-[url('./images/desserts.jpg')] w-[256px] h-[342px] bg-cover bg-no-repeat flex justify-center pt-[10px] rounded-lg transition delay-100 duration-300 ease-in-out hover:scale-105"
+              >
+                <h2 class="poppins-bold text-[#093035] text-[24px]">
+                  Desserts
+                </h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-[#093035] flex flex-col items-center p-[16px] gap-4">
-        
-        <img src="images/Logo (3).png" alt="" class="w-[300px] cursor-pointer">
+      <img src="images/Logo (3).png" alt="" class="w-[300px] cursor-pointer" />
 
-        <nav class="flex justify-center gap-[20px] items-center ">
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">Menu</p>
-            </a>
-              
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">Event</p>
-            </a>
-              
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">About Us</p>
-            </a>
-              
+      <nav class="flex justify-center gap-[20px] items-center">
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            Menu
+          </p>
+        </a>
 
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">Reservation</p>
-            </a>
-                
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">Orders</p>
-            </a>
-                
-            <a href="#">
-                <p class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110">Contact Us</p>
-            </a>
-        </nav>
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            Event
+          </p>
+        </a>
 
-        <p class="poppins-regular text-white text-[16px] w-[943px] text-center">
-            Lorem ipsum dolor sit amet consectetur. Sagittis mattis mauris at condimentum arcu eget. Sed posuere cursus pharetra tortor eu purus rhoncus lectus. Enim ut ligula sit nec donec. Hendrerit in.
-        </p>
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            About Us
+          </p>
+        </a>
 
-        <p class="poppins-regular text-white text-[16px] w-[943px] text-center">
-            SUNDAY - THURSDAY: 11:30AM - 11PM | FRIDAY & SATURDAY: 11:30AM - 12AM        
-        </p>
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            Reservation
+          </p>
+        </a>
 
-        <div class="w-[586px] flex gap-[20px] justify-center mt-4">
-            <button class="uppercase poppins-medium flex justify-center items-center gap-[10px] text-[#093035] bg-[#D3B486] w-[281px] h-[50px] rounded-full text-[18px] cursor-pointer hover:bg-white hover:text-[#093035] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl">Reserve Now</button>
-            <button class="uppercase poppins-medium flex justify-center items-center gap-[10px] text-[#093035] bg-[#D3B486] w-[281px] h-[50px] rounded-full text-[18px] cursor-pointer hover:bg-white hover:text-[#093035] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl">Contact Us</button>
-        </div>
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            Orders
+          </p>
+        </a>
 
-        <div class="flex gap-4 justify-center mt-5">
-            <a href="#">
-                <img src="images/Vector.png" alt="" class="w-[30px]">
-            </a>
-                
-            <a href="#">
-                <img src="images/Vector (1).png" alt="" class="w-[30px]">
-            </a>
-        </div>
+        <a href="#">
+          <p
+            class="poppins-semibold font-[20px] text-[#EDDFD3] hover:underline transition delay-102 duration-300 ease-in-out hover:scale-110"
+          >
+            Contact Us
+          </p>
+        </a>
+      </nav>
 
-        <p class="poppins-regular text-white text-[14px] uppercase mt-10">CopyRight 2025</p>
+      <p class="poppins-regular text-white text-[16px] w-[943px] text-center">
+        Lorem ipsum dolor sit amet consectetur. Sagittis mattis mauris at
+        condimentum arcu eget. Sed posuere cursus pharetra tortor eu purus
+        rhoncus lectus. Enim ut ligula sit nec donec. Hendrerit in.
+      </p>
 
+      <p class="poppins-regular text-white text-[16px] w-[943px] text-center">
+        SUNDAY - THURSDAY: 11:30AM - 11PM | FRIDAY & SATURDAY: 11:30AM - 12AM
+      </p>
+
+      <div class="w-[586px] flex gap-[20px] justify-center mt-4">
+        <button
+          class="uppercase poppins-medium flex justify-center items-center gap-[10px] text-[#093035] bg-[#D3B486] w-[281px] h-[50px] rounded-full text-[18px] cursor-pointer hover:bg-white hover:text-[#093035] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl"
+        >
+          Reserve Now
+        </button>
+        <button
+          class="uppercase poppins-medium flex justify-center items-center gap-[10px] text-[#093035] bg-[#D3B486] w-[281px] h-[50px] rounded-full text-[18px] cursor-pointer hover:bg-white hover:text-[#093035] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl"
+        >
+          Contact Us
+        </button>
+      </div>
+
+      <div class="flex gap-4 justify-center mt-5">
+        <a href="#">
+          <img src="images/Vector.png" alt="" class="w-[30px]" />
+        </a>
+
+        <a href="#">
+          <img src="images/Vector (1).png" alt="" class="w-[30px]" />
+        </a>
+      </div>
+
+      <p class="poppins-regular text-white text-[14px] uppercase mt-10">
+        CopyRight 2025
+      </p>
     </footer>
 
-</body>
+
+    <!-- script for icons -->
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+  </body>
 </html>
