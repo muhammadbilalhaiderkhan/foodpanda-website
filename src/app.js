@@ -74,14 +74,15 @@ function logIn (){
             loginTrueEl.innerHTML = "";
             location.href = "./home.html"
         }, 1500);
+        return
     }
 
-    else{
+    
         loginPel.innerHTML = "Invalid email or password"
         setTimeout(function(){
             loginPel.innerHTML = "";
         }, 3000);
-    }
+
 }
 
 //    menu section products filterization functionality
