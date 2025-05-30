@@ -792,3 +792,22 @@ function filterItems(el) {
         }  
     }
 }
+
+
+// add to cart add + sub - functuonality
+
+function sub(value){
+    
+    if(value.nextElementSibling.textContent === "0"){
+        return
+    }
+
+    value.nextElementSibling.textContent--
+}
+
+function add(value){
+
+    value.previousElementSibling.textContent++
+
+}
+

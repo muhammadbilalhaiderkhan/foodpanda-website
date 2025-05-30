@@ -66,7 +66,7 @@
           >
             <!-- cart 1 -->
             <div
-              class="bg-[#F9EFE6] flex items-center gap-3 rounded-[8px] shadow-[0_2px_2px_0_rgba(0,0,0,0.25)] w-full"
+              class="p-4 bg-[#F9EFE6] flex justify-evenly items-center gap-3 rounded-[8px] shadow-[0_2px_2px_0_rgba(0,0,0,0.25)] w-full"
             >
               <!-- cart image -->
               <div
@@ -96,17 +96,17 @@
                   <div
                     class="bg-[#EDDFD3] flex items-center md:gap-[24px] gap-4 w-fit md:rounded-[40px] rounded-[30px] font-bold h-fit"
                   >
-                    <p
-                      class="bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center"
+                    <button
+                      onclick="sub(this)" class="cursor-pointer bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center"
                     >
                       -
-                    </p>
+                    </button>
                     <p>2</p>
-                    <p
-                      class="bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center"
+                    <button
+                      onclick="add(this)" class="cursor-pointer bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center"
                     >
                       +
-                    </p>
+                    </button>
                   </div>
                   <div>
                     <span
@@ -118,60 +118,6 @@
               </div>
             </div>
 
-            <!-- cart 2 -->
-            <div
-              class="bg-[#F9EFE6] flex items-center gap-3 rounded-[8px] shadow-[0_2px_2px_0_rgba(0,0,0,0.25)] w-full"
-            >
-              <!-- cart image -->
-              <div
-                class="w-[210px] h-[137px] md:w-[172px] md:h-[172px] bg-no-repeat md:bg-contain bg-cover bg-center rounded-[100%]"
-                style="
-                  background-image: url('/src/images/buckwheat-porridge-with-mushrooms\ 1.png');
-                "
-              ></div>
-
-              <!-- cart detail -->
-              <div class="flex flex-col items-center gap-2.5 p-2">
-                <div class="flex justify-between">
-                  <div class="md:w-[67%] flex flex-col md:gap-[18px] gap-0">
-                    <h2 class="font-bold text-black text-[28px]">
-                      Lorem ipsum
-                    </h2>
-                    <p class="font-medium">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-                  <p class="font-bold text-black text-[26px]">$14</p>
-                </div>
-
-                <div
-                  class="flex w-full md:gap-[33px] gap-3.5 md:justify-end justify-start"
-                >
-                  <div
-                    class="bg-[#EDDFD3] flex items-center md:gap-[24px] gap-4 w-fit md:rounded-[40px] rounded-[30px] font-bold h-fit"
-                  >
-                    <p
-                      class="bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center"
-                    >
-                      -
-                    </p>
-                    <p>2</p>
-                    <p
-                      class="bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center"
-                    >
-                      +
-                    </p>
-                  </div>
-                  <div>
-                    <span
-                      class="iconify text-black md:text-4xl text-2xl h-fit"
-                      data-icon="ant-design:delete-outlined"
-                    ></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
 
         <!-- Delivery & Payment mobile only -->
