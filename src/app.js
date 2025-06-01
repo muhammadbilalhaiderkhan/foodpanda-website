@@ -789,6 +789,21 @@ function filterItems(el) {
                     </div>
                 </div>
             `;
-        }  
+        };  
+    };
+};
+
+// add to cart addition and subtraction functionality
+
+function sub(value){
+    
+    if(value.nextElementSibling.textContent === "0"){
+        return;
     }
+
+    value.nextElementSibling.textContent--
+};
+
+function add(value){
+    value.previousElementSibling.textContent++
 }
