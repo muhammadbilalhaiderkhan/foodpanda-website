@@ -736,7 +736,7 @@ let currentIndex = null;
                         <a href="#"><img src="images/Frame 8.png" alt="" class="w-[28px]"></a>
                         <p class="h-[24px]">⭐⭐⭐⭐⭐</p>
                     </div>
-                    <button class="mt-3 poppins-medium text-[#D4AF37] text-[18px] w-[179px] h-[48px] bg-[#12464D] rounded-full flex justify-center items-center cursor-pointer hover:bg-[#D4AF37] hover:text-[#12464D] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl">
+                    <button onclick="showFoodItem(${i})" class="mt-3 poppins-medium text-[#D4AF37] text-[18px] w-[179px] h-[48px] bg-[#12464D] rounded-full flex justify-center items-center cursor-pointer hover:bg-[#D4AF37] hover:text-[#12464D] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl">
                         Order Now
                     </button>
                 </div>
@@ -793,17 +793,87 @@ function filterItems(el) {
     };
 };
 
-// add to cart addition and subtraction functionality
+
+let itemDivEl = document.getElementById('#item-detail');
+
+function showFoodItem(index){
+    
+    window.location.href = './itemDetail.html'
+
+    let fooditem = resturants[currentIndex].items[index];
+
+    itemDivEl.innerHTML = `
+
+        <img src="${fooditem.imgSrc}" alt="" class="">
+
+            <div class="W-[526px] flex flex-col gap-5">
+                <p class="text-[48px] text-[#093035] poppins-bold">${fooditem.foodName}</p>
+
+                <div class=" w-full flex justify-between">
+                    <p class="">⭐⭐⭐⭐⭐</p>
+                    <p class="poppins-bold text-[22px] text-[#D4AF37]">$24</p>
+                </div>
+
+                <div class="text-[16px] poppins-regular text-[#093035] flex flex-col gap-4">
+                    <p>
+                        Creamy Arborio rice infused with a medley of wild mushrooms, Parmesan cheese, and a hint of truffle oil. 
+                    </p>
+
+                    <p>  
+                        This exquisite dish promises a symphony of flavors, meticulously crafted to elevate your dining experience. Immerse yourself in the taste of Italy, one delightful spoonful at a time. 
+                    </p>
+
+                    <br>
+
+                    <div class="flex w-full  gap-3.5" >
+
+                        <div class="bg-[#EDDFD3] flex items-center md:gap-[24px] gap-4 w-fit md:rounded-[40px] rounded-[30px] font-bold h-fit">
+                            <button onclick="sub(this)" class="bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center cursor-pointer transition hover:text-[#D4AF37] hover:bg-[#12464D]">
+                                -
+                            </button>
+
+                            <p>0</p>
+
+                            <button onclick="add(this)" class="bg-[#D3B486] rounded-full md:px-[12px] px-2 md:py-[6px] text-center cursor-pointer transition hover:text-[#D4AF37] hover:bg-[#12464D]" >
+                                +
+                            </button>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="flex gap-3 pt-9">
+                        <button class="mt-3 poppins-medium text-[#D4AF37] text-[18px] w-[179px] h-[48px] bg-[#12464D] rounded-full flex justify-center items-center cursor-pointer hover:bg-[#D4AF37] hover:text-[#12464D] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl">
+                            Order Now
+                        </button>
+                        <button class="mt-3 poppins-medium text-[#12464D] text-[18px] w-[179px] h-[48px] bg-[#D4AF37] rounded-full flex justify-center items-center cursor-pointer hover:bg-[#12464D] hover:text-[#D4AF37] transition delay-102 duration-300 ease-in-out hover:scale-110 shadow-2xl">
+                            Add to cart
+                        </button>
+                    </div>
+
+                </div>
+
+    
+    `
+
+    
+};
+
+// add to cart add + sub - functuonality
 
 function sub(value){
     
     if(value.nextElementSibling.textContent === "0"){
-        return;
+        return
     }
 
     value.nextElementSibling.textContent--
-};
+}
 
 function add(value){
+
     value.previousElementSibling.textContent++
+
 }
+
+
